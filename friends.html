@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+  background-color:#F8F3EC;
+  font-family:Poppins, sans-serif;
+  text-align: center;
+  margin:0;
+  padding:0;
+  position: relative;
+
+  /* Background image */
+  background-image: url("aboutme background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Soft overlay cream */
+body::before {
+  content:"";
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(248,243,236,0.6);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 15px;
+  background-color: #EFE4D8;
+  border-bottom: 2px solid #D8C3AD;
+  color: #4B3A2E;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #EFE4D8;
+  border-bottom: 1px solid #D8C3AD;
+}
+
+nav ul li {
+  margin: 4px 5px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #6C584C;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+nav ul li a:hover {
+  background-color: #D8C3AD;
+  color: #3E2D22;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+/* CARD UTAMA */
+.card {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  border: 1px solid #E5D6C5;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  color: #4B3A2E;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #6B5B4D;
+  font-size: 15.5px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 auto 40px auto;
+  max-width: 900px;
+  position: relative;
+}
+
+.gallery img {
+  width: auto; /* ikut saiz asal */
+  max-width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  position: relative;
+  top: calc(-10px + 20px * var(--rand-top));
+  left: calc(-10px + 20px * var(--rand-left));
+  transform: rotate(calc(-10deg + 20deg * var(--rand-rotate)));
+}
+
+.gallery img:hover {
+  transform: scale(1.05) rotate(0deg);
+  z-index: 10;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 8px;
+  background-color: #EFE4D8;
+  border-top: 2px solid #D8C3AD;
+  font-size: 14px;
+  color: #4B3A2E;
+}
+</style>
+
+<title>Index</title>
+</head>
+<body>
+<header>
+  <h1>ISEMA'S PERSONAL WEBSITE</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    <li><a href="family.html">Family</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="friends.html">Friends</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="card">
+    <h2>SEK JOKI</h2>
+    <p>Six people, six unpredictable personalities – Isma, Mad, Paly, Mimi, Putri & Mira! Think we look all polite and proper? Big mistake! 😎 From the ones who stir up little mischief to those who make everyone laugh nonstop, our personalities are way different from how we look 😏 Sometimes serious, sometimes hilarious, sometimes headache-inducing… but one thing’s for sure, when Sek Joki gets together, it’s full of color and never boring! 😂</p>
+  </div>
+
+  <div class="gallery">
+    <img src="gallery/friends photo 2.jpg" alt="Friend 2" style="--rand-top:0.3; --rand-left:0.5; --rand-rotate:0.2;">
+    <img src="gallery/friends photo 1.jpg" alt="Friend 1" style="--rand-top:-0.1; --rand-left:0.2; --rand-rotate:-0.3;">
+  </div>
+
+  <div class="card">
+    <h2>ANAK BUAH ISMA</h2>
+    <p>"Isma, Aniq, Arif, Damia & Fatini! This squad came together in the most random way – went out for a meal once, laughed like crazy… and suddenly we were super close 😎 From weird stories, endless laughs, to little moments that make every day more fun, this crew is truly one of a kind. Totally unplanned, but it just clicked! 😂”</p>
+  </div>
+
+  <div class="gallery">
+    <img src="gallery/anak buah isma.jpeg" alt="Friend 2" style="--rand-top:0.3; --rand-left:0.5; --rand-rotate:0.2;">
+    <img src="gallery/anak buah isma 2.jpeg" alt="Friend 1" style="--rand-top:-0.1; --rand-left:0.2; --rand-rotate:-0.3;">
+  </div>
+
+  <div class="card">
+    <h2>GENG KACIP JPNR</h2>
+    <p>“Geng Kacip JPNR – lots of us, but at first it was a bit awkward since I was the only one from an outside club who joined JPNR 😅 But over time, from awkward laughs to non-stop chats, we ended up super close like we’ve known each other for years! From the chill ones to the crazy ones, this crew is full of color and always makes days at JPNR way more fun 😂”</p>
+  </div>
+
+  <div class="gallery">
+    <img src="gallery/kacip jpnr.jpg" alt="Friend 2" style="--rand-top:0.3; --rand-left:0.5; --rand-rotate:0.2;">
+    <img src="gallery/kacip jpnr 2.jpg" alt="Friend 1" style="--rand-top:-0.1; --rand-left:0.2; --rand-rotate:-0.3;">
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 This Website is for educational purposes only | Tuan Muhammad Isma ALif</p>
+</footer>
+
+<audio id="bgMusic" loop>
+  <source src="Music/Harasa - Ingin Tenang (Official Lyric Video) - Harasa.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #D8C3AD;
+  border: none;
+  color: #4B3A2E;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  z-index: 1000;
+">
+  🎵 Play Music
+</button>
+
+<script>
+  const bgMusic = document.getElementById("bgMusic");
+  const musicBtn = document.getElementById("musicBtn");
+  let isPlaying = false;
+
+  bgMusic.volume = 0.2; // gentle background volume
+
+  musicBtn.addEventListener("click", () => {
+    if (!isPlaying) {
+      bgMusic.play();
+      isPlaying = true;
+      musicBtn.textContent = "⏸ Pause Music";
+      musicBtn.style.backgroundColor = "#CBB29A";
+    } else {
+      bgMusic.pause();
+      isPlaying = false;
+      musicBtn.textContent = "🎵 Play Music";
+      musicBtn.style.backgroundColor = "#D8C3AD";
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      background-color:#F8F3EC;
+      font-family:Poppins, sans-serif;
+      text-align: center;
+      margin:0;
+      padding:0;
+      display:flex;
+      flex-direction: column;
+      min-height: 100vh; 
+      position: relative;
+
+      /* Background image */
+      background-image: url("aboutme background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* Soft overlay cream */
+    body::before {
+      content: "";
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba(248,243,236,0.6);
+      z-index: -1;
+    }
+
+    header {
+    text-align: center;
+    padding: 15px;
+    background-color: #EFE4D8; /* light nude cream */
+    border-bottom: 2px solid #D8C3AD;
+    color: #4B3A2E; /* dark brown */
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #EFE4D8;
+    border-bottom: 1px solid #D8C3AD;
+  }
+
+  nav ul li {
+    margin: 4px 5px;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #6C584C; /* warm brown */
+    font-weight: 500;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover {
+    background-color: #D8C3AD; /* nude brown highlight */
+    color: #3E2D22;
+  }
+
+  /* Main Content */
+  main {
+    flex: 1;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .card {
+    max-width: 720px;
+    margin: auto;
+    background-color: #FFFFFF;
+    padding: 38px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    border: 1px solid #E5D6C5;
+  }
+
+  .card h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #4B3A2E;
+  }
+
+  .card p {
+    color: #6B5B4D;
+    line-height: 1.7;
+    font-size: 15.5px;
+  }
+
+  /* Gallery Section */
+  .experience-gallery h2 {
+    margin-bottom: 25px;
+    color: #4B3A2E;
+  }
+
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .gallery-item {
+    flex: 1 1 250px;
+    max-width: 250px;
+    text-align: center;
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .gallery-item p {
+    margin-top: 10px;
+    color: #6B5B4D;
+    font-size: 14px;
+  }
+
+  .gallery-item:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 8px;
+    background-color: #EFE4D8;
+    border-top: 2px solid #D8C3AD;
+    font-size: 14px;
+    color: #4B3A2E;
+  }
+
+  </style>
+  <title>Index</title>
+</head>
+<body>
+  <header>
+    <h1>ISEMA'S PERSONAL WEBSITE</h1>
+  </header>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    <li><a href="family.html">Family</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="friends.html">Friends</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+</nav>
+<main>
+  <div class="class">
+    <h2> THIS PAGE WILL SHOW YOU MY EXPERIENCE JOURNEY I GAIN IN UiTM </h2>
+    <p>My experience during my time at UiTM has been very meaningful and colorful. From participating in co-curricular activities, practical workshops, community programs, to group projects, each experience taught me about leadership, teamwork, and creativity. I had the opportunity to interact with diverse individuals, create sweet memories with friends, and face challenges that shaped me into a more mature and independent person. Every step of my journey at UiTM not only added to my knowledge but also enriched me with invaluable life experiences.
+</p>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="experience-gallery" style="margin-top: 50px;">
+    <h2>Experience Highlights</h2>
+    <div class="gallery-container">
+      
+      <!-- Image 1 -->
+      <div class="gallery-item">
+        <img src="gallery/PMV.jpg" alt="Experience 1">
+        <p>Served as Head of Publicity & Multimedia (Session 24/25) at PMV – crafting eye-catching promotions and multimedia content to make every event a success!</p>
+      </div>
+
+      <!-- Image 2 -->
+      <div class="gallery-item">
+        <img src="gallery/JPNR.jpg" alt="Experience 2">
+        <p>Took on the role of Corporate & International Relations Executive at JPNR – building networks and collaborations that opened doors to amazing opportunities</p>
+      </div>
+
+      <!-- Image 3 -->
+      <div class="gallery-item">
+        <img src="gallery/CEC2.png" alt="Experience 3">
+        <p>Worked as an Executive Committee member at CEC – ensuring smooth operations and events while sharpening my organizational and communication skills</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; 2025 This Website is for educational purposes only | Tuan Muhammad Isma ALif</p>
+  </footer>
+</body>
+</html>
